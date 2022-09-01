@@ -5,9 +5,13 @@
     <hr/>
     <SimpleCounter/>
     <hr/>
-    <reactive-counter/>
+    <ReactiveCounter/>
     <hr/>
-    <watch-counter/>
+    <WatchCounter/>
+    <hr/>
+    <SimpleCounterCompositionApi/>
+    <hr/>
+    <TodoList/>
   </div>
 </template>
 
@@ -17,6 +21,8 @@ import HelloWorld from '@/components/00HelloWorld.vue'
 import SimpleCounter from '@/components/01SimpleCounter.vue'
 import ReactiveCounter from '@/components/02ReactiveCounter.vue'
 import WatchCounter from '@/components/03WatchCounter.vue'
+import SimpleCounterCompositionApi from '@/components/04SimpleCounterCompositionApi.vue'
+import TodoList from '@/components/05TodoList.vue'
 
 export default {
   name: 'home',
@@ -25,6 +31,8 @@ export default {
     SimpleCounter,
     ReactiveCounter,
     WatchCounter,
+    SimpleCounterCompositionApi,
+    TodoList,
   }
 }
 </script>
