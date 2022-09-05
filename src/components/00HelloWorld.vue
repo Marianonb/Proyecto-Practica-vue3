@@ -11,7 +11,6 @@ import {ref} from "vue"
 export default {
     name: "HelloWorld",
     setup(){
-        console.log("Hello World")
         const message = ref("Mensaje desde el componente de HelloWorld")
         return { message }
     }
