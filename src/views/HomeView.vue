@@ -13,6 +13,9 @@
     <hr/>
     <TodoList/>
   </div>
+    <hr/>
+    <SimpleFetch/>
+
 </template>
 
 <script>
@@ -23,6 +26,7 @@ import ReactiveCounter from '@/components/02ReactiveCounter.vue'
 import WatchCounter from '@/components/03WatchCounter.vue'
 import SimpleCounterCompositionApi from '@/components/04SimpleCounterCompositionApi.vue'
 import TodoList from '@/components/05TodoList.vue'
+import SimpleFetch from '@/components/06SimpleFetch.vue'
 
 export default {
   name: 'home',
@@ -33,6 +37,7 @@ export default {
     WatchCounter,
     SimpleCounterCompositionApi,
     TodoList,
+    SimpleFetch,
   }
 }
 </script>
