@@ -1,5 +1,4 @@
 <template>
-  <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld/>
     <hr/>
@@ -12,21 +11,29 @@
     <SimpleCounterCompositionApi/>
     <hr/>
     <TodoList/>
-  </div>
     <hr/>
     <SimpleFetch/>
-
+    <hr/>
+    <Suspense>
+      <template #defautlt > 
+        <SuspenseFetch />
+      </template>
+      <template #fallback >
+        Cargando informacion de la Api, unmomento por favor...
+      </template>
+    </Suspense>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/00HelloWorld.vue'
-import SimpleCounter from '@/components/01SimpleCounter.vue'
-import ReactiveCounter from '@/components/02ReactiveCounter.vue'
-import WatchCounter from '@/components/03WatchCounter.vue'
-import SimpleCounterCompositionApi from '@/components/04SimpleCounterCompositionApi.vue'
-import TodoList from '@/components/05TodoList.vue'
-import SimpleFetch from '@/components/06SimpleFetch.vue'
+import HelloWorld from '@/components/00HelloWorld'
+import SimpleCounter from '@/components/01SimpleCounter'
+import ReactiveCounter from '@/components/02ReactiveCounter'
+import WatchCounter from '@/components/03WatchCounter'
+import SimpleCounterCompositionApi from '@/components/04SimpleCounterCompositionApi'
+import TodoList from '@/components/05TodoList'
+import SimpleFetch from '@/components/06SimpleFetch'
+import SuspenseFetch from '@/components/07SuspenseFetch'
 
 export default {
   name: 'home',
@@ -38,6 +45,7 @@ export default {
     SimpleCounterCompositionApi,
     TodoList,
     SimpleFetch,
+    SuspenseFetch,
   }
 }
 </script>
